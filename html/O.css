@@ -1,0 +1,6 @@
+.container {
+    background: url(img/O.png);
+    background-repeat: no-repeat;
+    border: .1rem solid black;
+    background-position: center;
+}

@@ -1,0 +1,49 @@
+* {
+    border:0;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Platypi", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    border: .1rem solid black;
+    box-shadow: .2rem .2rem .5rem 0rem rgba(124, 124, 124, 0.75);
+    border-radius: 2.5rem;
+}
+
+.container a:nth-child(1) button{
+    top: 5rem;
+    right: 5rem;
+    width: 5rem;
+    height: 5rem;
+    background: green;
+}
+.container a:nth-child(2) button{
+    top: 11rem;
+    right: 5rem;
+    width: 5rem;
+    height: 5rem;
+    background: red;
+}
+
+button i {
+    color: #fff;
+}

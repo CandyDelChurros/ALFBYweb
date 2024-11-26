@@ -27,13 +27,13 @@ def conference():
     genai.configure(api_key="AIzaSyBq2nc05mUMNpuyQMsW-j69L7Qtl-Chf0A")
     model = genai.GenerativeModel("gemini-1.5-flash")
     letra = PIL.Image.open("letra.png")
-    response = model.generate_content(["é uma letra A ? se for diga 'SIM É UMA LETRA A', se não for diga 'ESTÁ ERRADO!' ", letra])
+    response = model.generate_content(["é uma letra A ? se for diga 'SIM É UMA LETRA A', se não for diga 'ESTÁ ERRADO!', considere certo todo tipo de A, sendo minusculo ou maisculo ", letra])
     print(response.text)
 
 root = tk.Tk()
 root.title("desenhe a letra A")
 
-canvas = tk.Canvas(root, width=1920, height=520, bg='white')
+canvas = tk.Canvas(root, width=1500, height=620, bg='white')
 canvas.pack()
 
 last_x, last_y = None, None
@@ -45,4 +45,3 @@ capture_button = tk.Button(root, text="Conferir", command=conference)
 capture_button.pack()
 
 root.mainloop()
-
