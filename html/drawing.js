@@ -23,7 +23,6 @@ function startDrawing(e) {
         [lastX, lastY] = [e.offsetX, e.offsetY];
     }
 }
-
 // Função para desenhar no canvas
 function draw(e) {
     if (!drawing) return;
