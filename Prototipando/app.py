@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import google.generativeai as genai
-from PIL import Image, ImageOps
+from PIL import Image
 import os
-import io
 
 app = Flask(__name__)
 
@@ -28,28 +27,19 @@ def upload_image():
         genai.configure(api_key="AIzaSyBq2nc05mUMNpuyQMsW-j69L7Qtl-Chf0A")
         model = genai.GenerativeModel("gemini-1.5-flash")
 
-        # Abrir a imagem salva e verificar se está no formato correto
+        # Abrir a imagem salva
         with Image.open(image_path) as img:
-            # Verificar se a imagem está invertida e corrigir se necessário
-            img = ImageOps.exif_transpose(img)
-            img_byte_arr = io.BytesIO()
-            img.save(img_byte_arr, format='PNG')
-            img_byte_arr.seek(0)  # Voltar ao início do buffer
-
             # Enviar a imagem para a API e obter a resposta
-            response = model.generate_content([
-                "o desenho que vc ve esta proximo de uma letra A?",
-                {
-                    "mime_type": "image/png",
-                    "data": img_byte_arr.getvalue()
-                }
-            ])
+            response = model.generate_content(["A imagem que você está vendo representa a letra A? Considere maiúscula ou minúscula, em diferentes estilos como letra de forma, cursiva, manuscrita, ou até mesmo em caligrafia artística. A imagem esta inserida em um background preto o qual pode ser desconsiderado na avaliação, leve em conta apenas os elementos presentes na imagem. Caso a resposta para a pergunta seja 'sim', responda 'correto'. Caso a resposta seja 'não', responda 'incorreto'.", img])
             result = response.text
 
+        # Retornar a resposta da API no campo 'message'
         return jsonify({'message': result})
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error: {e}", exc_info=True)
         return jsonify({'message': f'Internal Server Error: {e}'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# api.key = AIzaSyBq2nc05mUMNpuyQMsW-j69L7Qtl-Chf0A
