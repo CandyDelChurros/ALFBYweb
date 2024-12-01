@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALFby &copy;</title>
+    <link rel="stylesheet" href="../static/style/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>ALFby &copy;</h1>
+            <p>A ALFby trata-se de uma ferramenta para auxiliar crianças com deficiência visual e seus tutores no processo alfabetização, particularmente, na aprendizagem da escrita das letras.</p>
+            <div class="div-start">
+                <button class="start" data-route="{{ url_for('module') }}"> <b>Começar</b> </button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="img">
+                <ul>
+                    <li>Plugue a mesa digitalizadora</li>
+                    <li>Navegue entre os módulos</li>
+                    <li>Selecione a letra desejada</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script/navegation.js"></script>
+</body>
+</html>

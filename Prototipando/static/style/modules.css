@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Poppins';
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container{
+    text-align: center;
+    padding: 2rem;
+}
+
+.letters{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 4rem;
+}
+
+.a, .e, .i, .o, .u{
+    width: 10rem;
+    height: 10rem;
+    transition: .2s;
+    background-size: contain    ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.a{
+    background-image: url(../img/letter-a.png);
+}
+
+
+.e{
+    background-image: url(../img/letter-e.png);
+}
+
+.i{
+    background-image: url(../img/letter-i.png);
+}
+
+.o{
+    background-image: url(../img/letter-o.png);
+}
+
+.u{
+    background-image: url(../img/letter-u.png);
+}
+
+.back{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #43D685;
+    font-family:'Poppins';
+    font-size: 2rem;
+    transition: .2s;
+}
+
+.a:hover, .e:hover, .i:hover, .o:hover, .u:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.back:hover{
+    background-color: #072A30;
+    color: white;
+    cursor: pointer;
+}
+

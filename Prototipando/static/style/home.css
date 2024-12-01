@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Poppins';
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.left-side{
+    height: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 8rem;
+}
+
+p{
+    margin-bottom: 6rem;
+}
+
+.div-start{
+    display: flex;
+    justify-content: center;
+}
+
+.start{
+    width: 25rem;
+    height: 6rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #43D685;
+    font-family:'Poppins';
+    font-size: 3rem;
+    transition: .2s;
+}
+
+.start:hover{
+    background-color: #072A30;
+    color: white;
+    cursor: pointer;
+}
+
+
+.right-side{
+
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 35rem;
+    height: 35rem;
+    background-image: url(../img/mesa-digitalizadora.png);
+    background-size: contain    ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul{
+    position: relative;
+    top: 6.5rem;
+    left: 3rem;
+    width: 70%;
+}
+
+li{
+    margin: 1.2rem;
+    font-size: 1.4rem;
+    border-left: .15rem solid #072A30;
+    padding-left: 1rem;
+}
