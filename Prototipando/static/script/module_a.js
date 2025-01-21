@@ -1,3 +1,27 @@
+// Cria o objeto de áudio
+const audio = new Audio('/static/audio/a.m4a');
+
+// Função para reproduzir ou pausar o áudio
+function toggleAudio() {
+    if (audio.paused) {
+        console.log('Reproduzindo o áudio...');
+        audio.play()
+            .then(() => console.log('Áudio reproduzido com sucesso.'))
+            .catch(err => console.error('Erro ao reproduzir o áudio:', err));
+    } else {
+        console.log('Pausando o áudio...');
+        audio.pause();
+    }
+}
+
+// Adiciona o evento ao botão
+const button = document.getElementById('song');
+if (button) {
+    button.addEventListener('click', toggleAudio);
+} else {
+    console.error('Botão com ID "song" não encontrado.');
+}
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 let drawing = false;
@@ -95,3 +119,4 @@ function saveDrawing() {
         });
     }, 'image/png');
 }
+
