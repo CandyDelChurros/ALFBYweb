@@ -8,6 +8,7 @@ from modules.module_u import module_u_blueprint
 app = Flask(__name__)
 
 app.register_blueprint(module_a_blueprint, url_prefix='/module_a')
+
 app.register_blueprint(module_e_blueprint, url_prefix='/module_e')
 app.register_blueprint(module_i_blueprint, url_prefix='/module_i')
 app.register_blueprint(module_o_blueprint, url_prefix='/module_o')
