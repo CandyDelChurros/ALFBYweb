@@ -1,3 +1,19 @@
+// Cria o objeto de áudio
+const audio = new Audio('/static/audio/e.m4a');
+
+// Função para reproduzir ou pausar o áudio
+function toggleAudio() {
+    if (audio.paused) {
+        console.log('Reproduzindo o áudio...');
+        audio.play()
+            .then(() => console.log('Áudio reproduzido com sucesso.'))
+            .catch(err => console.error('Erro ao reproduzir o áudio:', err));
+    } else {
+        console.log('Pausando o áudio...');
+        audio.pause();
+    }
+}
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 let drawing = false;
@@ -28,7 +44,7 @@ canvas.addEventListener('mouseup', () => {
 canvas.addEventListener('mousemove', (event) => {
     if (!drawingEnabled || !drawing) return;
     draw(event);
-    resetInactivityTimeout(); // Reset the inactivity timeout during drawing
+    resetInactivityTimeout();
 });
 
 resizeCanvas(); 

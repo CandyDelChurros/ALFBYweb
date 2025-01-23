@@ -1,5 +1,5 @@
 // Cria o objeto de áudio
-const audio = new Audio('/static/audio/i.m4a');
+const audio = new Audio('/static/audio/t.m4a');
 
 // Função para reproduzir ou pausar o áudio
 function toggleAudio() {
@@ -12,6 +12,14 @@ function toggleAudio() {
         console.log('Pausando o áudio...');
         audio.pause();
     }
+}
+
+// Adiciona o evento ao botão
+const button = document.getElementById('song');
+if (button) {
+    button.addEventListener('click', toggleAudio);
+} else {
+    console.error('Botão com ID "song" não encontrado.');
 }
 
 const canvas = document.getElementById('canvas');
@@ -76,10 +84,10 @@ function saveDrawing() {
         const formData = new FormData();
         formData.append('image', blob, 'desenho.png');
 
-        fetch('/module_i/upload_image', {
+        fetch('/module_t/upload_image', {
             method: 'POST',
             body: formData
-        })           
+        })        
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -111,3 +119,4 @@ function saveDrawing() {
         });
     }, 'image/png');
 }
+
