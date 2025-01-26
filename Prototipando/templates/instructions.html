@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções</title>
+    <link rel="stylesheet" href="../static/style/instructions.css">
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <img src="../static/img/mesa.png" alt="">
+            <ul>
+                <li><b>Plugue a mesa digitalizadora</b></li>
+                <li><b>Navegue entre os módulos</b></li>
+                <li><b>Selecione a letra desejada</b></li>
+            </ul>
+        </div>
+        <button class="start" data-route="{{ url_for('modules') }}"> <b>CONTINUAR</b> </button>
+    </div>
+</body>
+</html>
