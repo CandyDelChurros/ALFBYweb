@@ -10,14 +10,15 @@
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/static/style/module_a.css">
-    <link rel="stylesheet" href="/static/style/module_u.css">
+    <link rel="stylesheet" href="../static/style/letters.css">
 </head>
 <body>
     <div class="container">
+        <h1>U</h1>
         <canvas id="canvas"></canvas>
         <button id="back" class="btn-header" data-route="{{ url_for('module') }}"><i class="fa-solid fa-arrow-left"></i></button>
         <button id="restart" class="btn-header" data-route="{{ url_for('module_u.module_u') }}"><i class="fa-solid fa-rotate-right"></i></button>
+        <button id="song" class="btn-header"><i class="fa-solid fa-headphones"></i></button>
 
         <div class="pop-up">
             <div class="pop-head">

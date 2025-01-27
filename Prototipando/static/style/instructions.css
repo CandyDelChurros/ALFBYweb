@@ -15,14 +15,14 @@
     background-image: url(../img/background.png);
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
 }
 
 .instructions{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-size: 1.5rem;
     color: #e3a25d;
     font-family: sans-serif;
@@ -33,7 +33,7 @@ img{
 }
 
 ul{
-    height: 18rem;
+    height: 15rem;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -41,8 +41,8 @@ ul{
 }
 
 li{
-    border-left: .25rem solid #e3a25d;
-    padding-left: .5rem;
+    border-bottom: .1rem solid #e3a25d;
+    padding-bottom: .5rem;
 }
 
 button{

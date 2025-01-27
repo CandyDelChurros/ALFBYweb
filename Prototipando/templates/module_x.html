@@ -10,47 +10,11 @@
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../static/style/module_a.css">
+    <link rel="stylesheet" href="../static/style/letters.css">
 </head>
 <body>
     <div class="container">
-        <canvas id="canvas"></canvas>
-        <button id="back" class="btn-header" data-route="{{ url_for('module') }}"><i class="fa-solid fa-arrow-left"></i></button>
-        <button id="restart" class="btn-header" data-route="{{ url_for('module_a.module_a') }}"><i class="fa-solid fa-rotate-right"></i></button>
-        <button id="song" class="btn-header"><i class="fa-solid fa-headphones"></i></button>
-
-        <div class="pop-up">
-            <div class="pop-head">
-                <span>TAREFA CONCLUIDA</span>
-                <button data-route="{{ url_for('module') }}"><i class="fa-solid fa-house"></i></button> 
-            </div>
-            <div class="pop-main">
-                <button data-route="{{ url_for('module_b.module_b') }}">Proximo</button>
-                <button data-route="{{ url_for('module_a.module_a') }}">Recomeçar</button>
-        </div>
-    </div>
-
-    
-
-    <script src="/static/script/module_a.js"></script>
-    <script src="/static/script/navegation.js"></script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lousa Interativa</title>
-    <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../static/style/module_a.css">
-</head>
-<body>
-    <div class="container">
+        <h1>X</h1>
         <canvas id="canvas"></canvas>
         <button id="back" class="btn-header" data-route="{{ url_for('module') }}"><i class="fa-solid fa-arrow-left"></i></button>
         <button id="restart" class="btn-header" data-route="{{ url_for('module_x.module_x') }}"><i class="fa-solid fa-rotate-right"></i></button>
@@ -62,14 +26,14 @@
                 <button data-route="{{ url_for('module') }}"><i class="fa-solid fa-house"></i></button> 
             </div>
             <div class="pop-main">
-                <button data-route="{{ url_for('module_y.module_y') }}">Proximo</button>
-                <button data-route="{{ url_for('module_x.module_x') }}">Recomeçar</button>
+                <button data-route="{{ url_for('module_x.module_y') }}">Proximo</button>
+                <button data-route="{{ url_for('module_w.module_x') }}">Recomeçar</button>
         </div>
     </div>
 
     
 
-    <script src="/static/script/module_x.js"></script>
+    <script src="/static/script/module_w.js"></script>
     <script src="/static/script/navegation.js"></script>
 </body>
 </html>

@@ -20,13 +20,13 @@ body {
 
 .container{
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url(../img/background.png);
     background-size: cover;
+    background-position: center;
     padding: 2rem;
     color: #e3a25d;
 }
@@ -79,7 +79,6 @@ body {
     transition: transform 0.3s ease;
     font-family: "Pixelify Sans", serif;
 }
-
 
 .back:hover {
     transform: scale(1.05);

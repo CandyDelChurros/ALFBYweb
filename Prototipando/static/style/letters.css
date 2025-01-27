@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Lobster&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #1d1c4c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 65rem;
+    opacity: 0.5;
+}
+
+
+.container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+i{
+    color: #e3a25d;
+    
+}
+
+.container .btn-header {
+    position: absolute;
+    box-shadow: .2rem .2rem .5rem 0rem rgba(124, 124, 124, 0.75);
+    border-radius: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    right: 2rem;
+    background-color: #1d1c4c;
+    border: .35rem solid #3b487f;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container .btn-header:hover {
+    transform: scale(1.05);
+}
+
+.container #back {
+    top: 2rem;
+}
+
+.container #restart {
+    top: 8rem;
+}
+.container #song {
+    top: 14rem;
+}
+
+
+
+.pop-up {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2rem;
+    left: 30%;
+    border-style: double;
+    border-radius: 1.5rem;
+    box-shadow: .2rem .2rem .5rem 0rem rgba(124, 124, 124, 0.75);
+    width: 62rem;
+    height: 38rem;
+    flex-direction: column;
+    padding: 2rem;
+    visibility: hidden;
+}
+
+.pop-up span, button{
+    color: #e3a25d;
+}
+
+.pop-head button{
+    border-radius: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    right: 2rem;
+    background-color: #1d1c4c;
+    border: .35rem solid #3b487f;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pop-head button:hover{
+    transform: scale(1.05);
+}
+
+
+.pop-up .pop-head {
+    display: flex;
+    width: 65rem;
+    height: 5rem;
+    justify-content: center;
+}
+.pop-up .pop-head span{
+    width: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.pop-up .pop-head span i{
+    margin: 1rem;
+}
+
+.pop-up .pop-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65rem;
+    height: 30rem;
+    flex-direction: column;
+    color: #FFF;
+}
+
+
+.pop-up .pop-main button{
+    margin-top: 3rem;
+    width: 25rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: #1d1c4c;
+    border: .40rem solid #3b487f;
+    color: #e3a25d;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-family: "Pixelify Sans", serif;
+    font-weight: bold;
+}
+
+.pop-up .pop-main button:hover{
+    transform: scale(1.05);
+}
+
+
+.back:hover {
+    transform: scale(1.05);
+}
+
