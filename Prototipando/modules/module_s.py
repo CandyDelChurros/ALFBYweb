@@ -26,7 +26,7 @@ def upload_image():
         model = genai.GenerativeModel("gemini-1.5-flash")
 
         with Image.open(image_path) as img:
-            response = model.generate_content(["A imagem que você está vendo representa a letra B? Considere maiúscula ou minúscula, em diferentes estilos como letra de forma, cursiva, manuscrita, ou até mesmo em caligrafia artística. A imagem esta inserida em um background preto o qual pode ser desconsiderado na avaliação, leve em conta apenas os elementos presentes na imagem. Caso a resposta para a pergunta seja 'sim', responda 'correto'. Caso a resposta seja 'não', responda 'incorreto'.", img])
+            response = model.generate_content(["A imagem que você está vendo representa a letra S? Considere maiúscula ou minúscula, em diferentes estilos como letra de forma, cursiva, manuscrita, ou até mesmo em caligrafia artística. A imagem esta inserida em um background preto o qual pode ser desconsiderado na avaliação, leve em conta apenas os elementos presentes na imagem. Caso a resposta para a pergunta seja 'sim', responda 'correto'. Caso a resposta seja 'não', responda 'incorreto'.", img])
             result = response.text
 
         return jsonify({'message': result})

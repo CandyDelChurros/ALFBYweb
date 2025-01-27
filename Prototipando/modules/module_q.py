@@ -3,13 +3,13 @@ from PIL import Image
 import google.generativeai as genai
 import os
 
-module_b_blueprint = Blueprint('module_b', __name__,url_prefix='/module_b')
+module_q_blueprint = Blueprint('module_q', __name__,url_prefix='/module_q')
 
-@module_b_blueprint.route('/')
-def module_b():
-    return render_template('module_b.html')
+@module_q_blueprint.route('/')
+def module_q():
+    return render_template('module_q.html')
 
-@module_b_blueprint.route('/upload_image', methods=['POST'])
+@module_q_blueprint.route('/upload_image', methods=['POST'])
 def upload_image():
     try:
         if 'image' not in request.files:

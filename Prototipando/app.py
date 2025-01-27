@@ -64,7 +64,7 @@ def home():
 def instructions():
     return render_template('instructions.html')
 
-@app.route('/modules')
+@app.route('/module')
 def module():
     return render_template('modules.html')
 
