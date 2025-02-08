@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/048f53145f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+        <a data-route="{{ url_for('about_us') }}" class="sobre"><i class="fa-solid fa-circle-info fa-lg"></i>SOBRE NÓS</a>
         <button class="start" data-route="{{ url_for('instructions') }}"> <b>JOGAR</b> </button>
     </div>
     <script src="/static/script/navegation.js"></script>
