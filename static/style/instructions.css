@@ -26,6 +26,9 @@
     font-size: 1.5rem;
     color: #e3a25d;
     font-family: sans-serif;
+    position: relative;
+    right: 3rem;
+    top: 3rem;
 }
 
 img{
@@ -41,8 +44,12 @@ ul{
 }
 
 li{
-    border-bottom: .1rem solid #e3a25d;
+    border-bottom: .2rem solid #e3a25d;
     padding-bottom: .5rem;
+}
+
+i {
+    padding-right: 1rem;
 }
 
 button{
