@@ -13,4 +13,4 @@ Passo a passo para uso da aplicacao:
 7. Execute o arquivo principal da aplicação com o comando (certifique-se de estar com a maquina virtual ativada na pasta correta): python app.py
 8. Acesse a rota disponibilizada no terminal para visualizar e interagir com a aplicação.
 
-Link para acesso a documentacao (desatualizado): https://drive.google.com/file/d/1A10dalPpCQvVdDz-OHBv28iGRxQ8l6Gk/view?usp=sharing
+Link para acesso a documentacao (desatualizado): https://drive.google.com/file/d/1kvkQX55X7TGegHSO7UBMaLHDuNy5bv5_/view?usp=sharing
