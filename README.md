@@ -4,7 +4,7 @@ Passo a passo para uso da aplicação:
 
 1. Clone o repositório utilizando o git para baixar os arquivos do projeto em sua máquina:
 
-        > git clone https://github.com/vinicius1med/ALFBYweb.git
+        > git clone https://github.com/CandyDelChurros/ALFBYweb.git
 2. Acesse o diretório do projeto clonado (/ALFBYweb).
 
         > cd ALFBYweb
